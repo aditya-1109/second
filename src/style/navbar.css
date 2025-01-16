@@ -98,8 +98,8 @@
     }
 
     .logo{
-        font-size: 30px;
-        font-weight: 800;
+        font-size: 25px;
+        font-weight: 700;
     }
 
     .search-box{
@@ -123,7 +123,7 @@
 
     .search-box input:hover{
         opacity: 1;
-        width: 80px;
+        width: 70px;
         margin-left: -100px;
         
         
