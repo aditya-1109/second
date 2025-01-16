@@ -102,20 +102,30 @@
     }
 
     .search-box{
-        margin-left: 35vw;
+        margin-left: 25vw;
+    }
+
+    .search-icon{
+        z-index: 2;
     }
 
     .search-box input{
         width: 10px;
         position: absolute;
-        visibility: hidden;
-
+        opacity: 0;
+        margin-left: 0px;
+        margin-top: -5px;
+        z-index: 1;
+        transition: width 0.5s ease, opacity 0.5s ease, margin-left 0.5s ease;
+        
     }
 
     .search-box input:hover{
+        opacity: 1;
         width: 100px;
-        margin-left: 2px;
-        visibility: visible;
+        margin-left: -100px;
+        
+        
     }
 
 

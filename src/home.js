@@ -4,11 +4,10 @@ import "./style/home.css"
 const Home = () => {
 
     const cards = [{ logo: "./images/onixLogo.JPG", name: "Onix Renewable", detail: "Construction & Engineering", price: "26875.00" }, { logo: "./images/studdsLogo.JPG", name: "STUDDS", detail: "Auto Parts", price: "735.00" }, { logo: "./images/onixLogo.JPG", name: "Onix Renewable", detail: "Construction & Engineering", price: "26875.00" }, { logo: "./images/studdsLogo.JPG", name: "STUDDS", detail: "Auto Parts", price: "735.00" }, { logo: "./images/onixLogo.JPG", name: "Onix Renewable", detail: "Construction & Engineering", price: "26875.00" }, { logo: "./images/studdsLogo.JPG", name: "STUDDS", detail: "Auto Parts", price: "735.00" }, { logo: "./images/onixLogo.JPG", name: "Onix Renewable", detail: "Construction & Engineering", price: "26875.00" }, { logo: "./images/studdsLogo.JPG", name: "STUDDS", detail: "Auto Parts", price: "735.00" }, { logo: "./images/onixLogo.JPG", name: "Onix Renewable", detail: "Construction & Engineering", price: "26875.00" }, { logo: "./images/studdsLogo.JPG", name: "STUDDS", detail: "Auto Parts", price: "735.00" }]
-    const [cardd, setCard]= useState(null);
+    const [cardd, setCard]= useState({ logo: "./images/onixLogo.JPG", name: "Onix Renewable", detail: "Construction & Engineering", price: "26875.00" });
 
 
     const handlecard=(name)=>{
-        console.log(name);
         cards.forEach((card)=>{
             if(card.name=== name){
                 setCard(card);
@@ -39,7 +38,7 @@ const Home = () => {
                     </div>
                     <div className="cards">
                         {cards.map((card, index) => (
-                            <div key={index} onMouseEnter={()=>handlecard(card.name)} className="singlecard">
+                            <div key={index} onMouseEnter={()=>handlecard(card.name)} onClick={()=>handlecard(card.name)} className="singlecard">
                                 <img src={card.logo} alt="logo" />
                                 <h3>{card.name}</h3>
                                 <p className="card-detail">{card.detail}</p>

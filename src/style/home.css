@@ -1,11 +1,11 @@
-.home{
+.home {
     display: flex;
     width: 100vw;
     justify-content: center;
     align-items: center;
 }
 
-.advertisement{
+.advertisement {
     height: 45vh;
     width: 100vw;
     background-color: rgba(146, 40, 146, 0.1);
@@ -16,7 +16,7 @@
     top: 5px;
 }
 
-.poster-card-info{
+.poster-card-info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@
     min-width: 200px;
 }
 
-.poster-card-name{
+.poster-card-name {
     font-size: large;
     font-weight: 800;
     color: rgb(57, 12, 57) solid 1px;
@@ -36,7 +36,7 @@
     margin: 0;
 }
 
-.poster-card-detail{
+.poster-card-detail {
     padding: 0;
     margin: 0;
     color: grey;
@@ -44,17 +44,17 @@
     font-weight: 300;
 }
 
-.poster-card-price{
+.poster-card-price {
     font-weight: 900;
     margin: 0;
 }
 
-.poster-card-price-head{
-   
+.poster-card-price-head {
+
     margin: 0;
 }
 
-.cardSection{
+.cardSection {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -63,10 +63,10 @@
     width: 100vw;
     margin-top: 45vh;
     background-color: rgba(223, 213, 223, 0.2);
-    
+
 }
 
-.cardContainerHeading{
+.cardContainerHeading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +76,7 @@
 
 }
 
-.cards{
+.cards {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -88,7 +88,7 @@
     padding: 5px 10px 0 0;
 }
 
-.singlecard{
+.singlecard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,16 +104,16 @@
     padding: 5px;
 }
 
-.singlecard:hover{
+.singlecard:hover {
     border: rgb(57, 12, 57) solid 2px;
     box-shadow: 1px 1px 1px grey;
 }
 
-.singlecard img{
+.singlecard img {
     width: 80px;
 }
 
-.card-detail{
+.card-detail {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -123,10 +123,9 @@
     text-align: center;
 }
 
-.price{
+.price {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 200px;
 }
-
