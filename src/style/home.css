@@ -1,0 +1,132 @@
+.home{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.advertisement{
+    height: 45vh;
+    width: 100vw;
+    background-color: rgba(146, 40, 146, 0.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 5px;
+}
+
+.poster-card-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    margin: 100px 0 0 30px;
+    gap: 5px;
+    min-width: 200px;
+}
+
+.poster-card-name{
+    font-size: large;
+    font-weight: 800;
+    color: rgb(57, 12, 57) solid 1px;
+    padding: 10px;
+    margin: 0;
+}
+
+.poster-card-detail{
+    padding: 0;
+    margin: 0;
+    color: grey;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.poster-card-price{
+    font-weight: 900;
+    margin: 0;
+}
+
+.poster-card-price-head{
+   
+    margin: 0;
+}
+
+.cardSection{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 100vw;
+    margin-top: 45vh;
+    background-color: rgba(223, 213, 223, 0.2);
+    
+}
+
+.cardContainerHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: 700;
+    font-size: large;
+
+}
+
+.cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    overflow: scroll;
+    scrollbar-width: none;
+    gap: 0 10px;
+    width: 100vw;
+    padding: 5px 10px 0 0;
+}
+
+.singlecard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 200px;
+    min-height: 250px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 5px;
+    border-radius: 10px;
+    border: rgba(144, 139, 143, 0.3) solid 3px;
+    box-shadow: 0 0 10px 5px rgba(144, 139, 143, 0.3);
+    font-size: small;
+    padding: 5px;
+}
+
+.singlecard:hover{
+    border: rgb(57, 12, 57) solid 2px;
+    box-shadow: 1px 1px 1px grey;
+}
+
+.singlecard img{
+    width: 80px;
+}
+
+.card-detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    max-width: 150px;
+    text-align: center;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+}
+
