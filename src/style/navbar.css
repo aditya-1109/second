@@ -148,6 +148,9 @@
         border-radius: 4px; 
     }
     
+    .button{
+        padding: 10px;
+    }
     
     .menuBar-container {
         position: absolute;

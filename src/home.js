@@ -56,7 +56,7 @@ const Home = () => {
                     </div>
                     <div className="cards">
                         {cards.map((card, index) => (
-                            <div onMouseEnter={()=>handlecard(card.name)} className="singlecard">
+                            <div onMouseEnter={()=>handlecard(card.name)} onTouchStart={()=>handlecard(card.name)} className="singlecard">
                                 <img src={card.logo} alt="logo" />
                                 <h3>{card.name}</h3>
                                 <p className="card-detail">{card.detail}</p>
