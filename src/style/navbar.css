@@ -127,9 +127,14 @@
         display: none;
     }
 
-    .logo{
-        font-size: 25px;
-        font-weight: 700;
+    
+    
+    .logoImage {
+        width: 30px;
+    }
+    
+    .logoName {
+        width: 80px;
     }
 
     
