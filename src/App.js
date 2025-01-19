@@ -2,16 +2,19 @@ import './style/App.css';
 import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom";
 import Home from './home';
 import Navbar from './navbar';
+import Footer from './footer';
 
 const Layout=()=>{
   return(
     <>
-    <div className='container'>
+    <div className='Layout-container'>
     <div className='addvertise'>
       <div className='moving-add'>ADDA 367</div>
     </div>
     <Navbar />
+    
     <Outlet />
+    <Footer />
     </div>
     </>
   )

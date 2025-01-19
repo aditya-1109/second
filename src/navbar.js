@@ -17,29 +17,32 @@ const Menu = styled.div`
   p {
     font-size: small;
     font-weight: 700;
-    color: rgb(57, 12, 57);
+    color: #FACC15;
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.2s, opacity 0.2s ease-in-out;
+    font-family: Inter;
   }
 
   &:hover p {
     visibility: visible;
     opacity: 1;
+    
   }
 
   svg {
-    color: transparent;
-    stroke: black;
+    color: #D1D5DB;
+    stroke: transparent;
     stroke-width: 20px; 
     transition: color 0.3s ease, stroke 0.3s ease;
   }
 
   &:hover svg {
-    stroke: rgb(57, 12, 57);   
+       stroke: black;
   }
 `;
+
 
 
 const Navbar = () => {
@@ -59,7 +62,7 @@ const Navbar = () => {
             <AnimatePresence>
                 {isMenuOpen && (<motion.div className='menuBar-container' initial={{ x: "-100vw" }} animate={{ x: 0 }} exit={{ x: "-100vw" }} transition={{ type: spring, duration: 2 }} >
                     <div className='menu-header'>
-                        <div className="logo"> Website </div>
+                        <img className="logoImage" src="./images/blueLogo.png" />
                         <FontAwesomeIcon className="menu-below-icon" onClick={()=>setIsMenuOpen(!isMenuOpen)} icon={faClose} />
                     </div>
 
@@ -93,7 +96,8 @@ const Navbar = () => {
                 </AnimatePresence>
 
                 <div className="logo">
-                    Website
+                    <img className="logoImage" src="./images/blueLogo.png" alt="logo" />
+                    <img className="logoName" src="./images/blueName.png" alt="logo" />
                 </div>
 
 
@@ -130,8 +134,8 @@ const Navbar = () => {
 
 
                 <form className="search-box">
-                    <input type="text" placeholder="Search PreIPO, Upcoming IPO, StartUps and Founds" />
-                    <FontAwesomeIcon className="search-icon" icon={faSearch} />
+                    <input type="text" placeholder="Search...." />
+                    <FontAwesomeIcon className="search-icon" icon={faSearch} style={{ backgroundColor: 'transparent', color:  "#D1D5DB" }}/>
                 </form>
 
 
@@ -142,7 +146,7 @@ const Navbar = () => {
                         </div> :
 
                         <div>
-                            <button className="button" >Login</button>
+                            <button className="button">Login</button>
                         </div>
                     }
                 </div>

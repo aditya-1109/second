@@ -18,9 +18,11 @@ const Home = () => {
     return (
         <>
             <div className="home">
+                <div className="moving-background">
+                    <div className="black-cover" >
 
                 <div className="advertisement">
-                    <img src="" />
+                    <img src="./images/poster.jpg" alt="poster" className="posterImage" />
                     {cardd && (
                         <div className="poster-card-info">
                             <p className="poster-card-name">{cardd.name}</p>
@@ -69,7 +71,8 @@ const Home = () => {
                         ))}
                     </div>
                 </div>
-
+                </div>
+                </div>
             </div>
         </>
     )

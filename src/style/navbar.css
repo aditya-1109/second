@@ -3,10 +3,12 @@
     align-items: center;
     padding: 0;
     z-index: 1;
+
 }
 
 .Navbar{
-    background-color: rgba(201, 162, 201, 0.3);
+    
+    background: linear-gradient(90deg, #131925, #8e99af);
     width: 100vw;
     height: auto;
     flex-direction: row;
@@ -16,31 +18,59 @@
     visibility: 0.5;
     position: fixed;
     top: 25px;
+    z-index: 2;
+    
 }
 
 .logo{
-    color: rgb(146, 40, 146);
-    font-size: 40px;
-    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0 10px;
+}
+
+.logoImage {
+    width: 50px;
+}
+
+.logoName {
+    width: 130px;
 }
 
 .button{
-    background-color: rgb(146, 40, 146);
-    color: white;
+   
+    color: #131925;
     padding: 10px 20px;
     border: solid 0.5px rgb(57, 12, 57);
-    box-shadow: 5px 5px 5px grey;
+    
     font-size: 15px;
-    border-radius: 10px;
+    font-weight: 800;
+   
+    font-family: Inter;
+    border-radius: 25px;
+    
+    transition: transform 0.2s ease-in-out;
+    background: linear-gradient(90deg, #fae46c, #fbb034);
+    box-shadow: 0 4px 15px rgba(250, 228, 108, 0.5);
+
+}
+
+.button:hover{
+    background-color: #FBBF24;
+    transform: scale(1.05);
+      
 }
 
 .search-box input{
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    width: 25vw;
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 0.5px solid grey;
+    background-color: #1F2937;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: #FFFFFF;
+  outline: none;
+  padding: 10px;
+  width: 25vw;
 }
 
 .search-icon{
@@ -102,6 +132,8 @@
         font-weight: 700;
     }
 
+    
+
     .search-box{
         margin-left: 25vw;
     }
@@ -116,7 +148,7 @@
         opacity: 0;
         margin-left: 0px;
         margin-top: -5px;
-        z-index: 1;
+        z-index: 3;
         transition: width 0.5s ease, opacity 0.5s ease, margin-left 0.5s ease;
         
     }
@@ -136,12 +168,14 @@
         cursor: pointer;
         padding: 5px;
         margin: 0;
+
         
     }
     
     .menu-hemburger-icon {
         font-size: 24px; 
         transition: border 0.3s ease, color 0.3s ease;
+        color: white;
     }
     
     .menu-hemburger:hover {
@@ -156,12 +190,11 @@
     .menuBar-container {
         position: absolute;
         top: -35px;
-        left: -2px;
         width: 97vw;
         height: 100vh;
         background-color: white;
         border: solid black 1px;
-        z-index: 1000;
+        z-index: 5;
     }
     
     .menu-header {
